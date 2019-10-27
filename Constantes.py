@@ -10,10 +10,10 @@ TIPO_CUENTA = [ADMINISTRADOR, EMPLEADO]
 EMAIL = 'sadv.system@gmail.com'
 CONTRASEÑA = 'CAMO@@134'
 ASUNTO = 'Tu lista de codigos de DIEM '
-CODIGOS = 'Codes/TusCodigos.pdf'
+CODIGOS = 'Utiles/Tus-Codigos.pdf'
 
 IMAGEN_RANDOM = 'Imagenes/'+ str(random.randrange(1, 15)) + '.jpg'
 
-#Nada de nada
+
 
     
