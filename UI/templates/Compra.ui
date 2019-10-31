@@ -42,7 +42,7 @@
 color: rgb(238, 238, 238);</string>
     </property>
     <property name="text">
-     <string>Moneda fiduciaria</string>
+     <string>Moneda fiduciaria*</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditCodigos">
@@ -423,7 +423,7 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>OBLIGATORIO</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -504,7 +504,7 @@ color: rgb(238, 238, 238);</string>
      <rect>
       <x>790</x>
       <y>240</y>
-      <width>81</width>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
@@ -521,7 +521,7 @@ color: rgb(238, 238, 238);</string>
 color: rgb(238, 238, 238);</string>
     </property>
     <property name="text">
-     <string>Tasa del día</string>
+     <string>Tasa del día*</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditTasa">
@@ -545,7 +545,7 @@ color: rgb(238, 238, 238);</string>
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>OBLIGATORIO</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="botonInventario">
