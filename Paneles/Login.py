@@ -15,12 +15,13 @@ class Login():
         self.usurio = self.UIl.getUsuario()
         self.contrasena = self.UIl.getContrasena()
         self.tipoCuenta = self.UIl.getTipoCuenta()
+        
         Tipo_cuenta = True if (self.tipoCuenta == ADMINISTRADOR) else False
         if verificar(self.usurio, self.contrasena, Tipo_cuenta):
-            self.UIl.abrirInventario()
+            self.UIl.abrirInventario(Tipo_cuenta)
         else:
-            self.UIl.abrirInventario()
-            #self.UIl.throwMsgErrorProceso()
+            #self.UIl.abrirInventario()
+            self.UIl.throwMsgErrorProceso()
             
     def show(self):
         self.UIl.show()

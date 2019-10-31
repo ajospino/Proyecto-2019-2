@@ -20,16 +20,15 @@ class Usuario():
                 borrarUs(usuario)
                 self.UIu.throwMsgCompletado()
             except:
-                self.UIu.throwMsgError()
+                self.UIu.throwMsgErrorEliminar()
 
     def aggUsuario(self):
         usu = self.UIu.getLEusuario()
         con = self.UIu.getLEcontrasena()
         tipo = True if (self.UIu.getCBtipoCuenta() == "Administrador/a") else False
-        try:
-            agregarUs(usu, con, tipo)
+        if(agregarUs(usu, con, tipo)):
             self.UIu.throwMsgCompletado()
-        except:
+        else:
             self.UIu.throwMsgErrorCreacion()
         
     
