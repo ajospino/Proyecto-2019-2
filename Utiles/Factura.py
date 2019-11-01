@@ -230,14 +230,3 @@ def hacerCodigos(lista):
     c.drawText(text)
     c.showPage()
     c.save()
-
-# DESCRIPCION, CANTIDAD, VALOR UNIT,VALOR TOTAL
-#arr = [["DESCRIPCION", "CANT", "VALOR UNITARIO", "VALOR TOTAL"], ["$100 PlayStation Store Gift Card - PS3/ PS4/ PS Vita ","3","300000","900000"],
-#["$100 PlayStation Store Gift Card - PS3/ PS4/ PS Vita ","3","300000","900000"],["$100 PlayStation Store Gift Card - PS3/ PS4/ PS Vita ","3","300000","900000"],["$100 PlayStation Store Gift Card - PS3/ PS4/ PS Vita ","3","300000","900000"],
-#["$100 PlayStation Store Gift Card - PS3/ PS4/ PS Vita ","3","300000","900000"],["$100 PlayStation Store Gift Card - PS3/ PS4/ PS Vita ","3","300000","900000"]]
-#fecha1 = fecha()
-#FECHA, NUMERO FACTURA, CLIENTE, IDENTIFICACION, CELULAR, DEPARTAMENTO, TELEFONO, DIRECCION, CORREO, DESCUENTO, TPAGO
-#informacionCliente = [ fecha1 ,"434354324", "Jhon Mario Ojeda", "1000748121", "3113760373", "Antioquia", "2284832", "Crr 41 # 54- 15", "jhonmarioesgay@gmail.com", "0", "Contado"]
-
-#generarFactura("Prueba", arr, informacionCliente, consola = True)
-# hacerCodigos(arr)

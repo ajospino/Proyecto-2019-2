@@ -209,7 +209,7 @@ color: rgb(238, 238, 238);</string>
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="botonVentasAceptarE">
+   <widget class="QPushButton" name="botonEliminarU">
     <property name="geometry">
      <rect>
       <x>560</x>
@@ -457,7 +457,7 @@ background-color: rgb(34, 40, 49);</string>
    <zorder>label_6</zorder>
    <zorder>label_7</zorder>
    <zorder>comboBoxUsuarios</zorder>
-   <zorder>botonVentasAceptarE</zorder>
+   <zorder>botonEliminarU</zorder>
    <zorder>lineEditUsuario</zorder>
    <zorder>lineEditContrasena</zorder>
    <zorder>label_8</zorder>
@@ -478,7 +478,7 @@ background-color: rgb(34, 40, 49);</string>
   <tabstop>lineEditContrasena</tabstop>
   <tabstop>botonAgregarU</tabstop>
   <tabstop>comboBoxUsuarios</tabstop>
-  <tabstop>botonVentasAceptarE</tabstop>
+  <tabstop>botonEliminarU</tabstop>
  </tabstops>
  <resources/>
  <connections/>
