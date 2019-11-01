@@ -69,7 +69,7 @@ class Compra():
                     self.UIc.clearLEtasa()
                     self.UIc.clearLEfactura()
                     self.UIc.throwMsgProcesoTerminado()
-                    enviarCorreo('NOTIF_COMPRA', CORREO, None)
+                    #enviarCorreo('NOTIF_COMPRA', CORREO, None)
                 except:
                     self.UIc.throwMsgErrorProceso()
                 
