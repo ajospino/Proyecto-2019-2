@@ -75,7 +75,7 @@ class Verificacion():
     def enviarCodigos(self):
         hacerCodigos(self.informacionVenta)
         try:
-            enviarCorreo("CODIGO",self.informacionCliente[8],None)
+            enviarCorreo("CODIGO",self.informacionCliente[8],None,None)
             self.UIv.enableBTcorreo(False)
             self.UIv.throwMsgTerminado()
         except Exception as e:
@@ -88,7 +88,7 @@ class Verificacion():
         pathArchivo = "Facturas/" + self.informacionCliente[3] + ".pdf"
         
         try:
-            enviarCorreo("FACTURA",self.informacionCliente[8], pathArchivo)
+            enviarCorreo("FACTURA",self.informacionCliente[8], pathArchivo,None)
             self.UIv.enableBTfacturaCorreo(False)
             self.UIv.throwMsgTerminado()
         except:
