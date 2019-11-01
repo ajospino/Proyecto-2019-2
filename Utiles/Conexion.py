@@ -145,10 +145,16 @@ def borrarUs(usuario):
 
 def agregarUs(usuario,contraseña, tipoUsu) :
     con = encriptar(contraseña)
-
+  
     db = conectar()
-    db.Usuarios.insert({
+    try:
+     db.Usuarios.insert({
         'Nombre del usuario' : usuario,
         'Contraseña' : con,
         'Administrador' : tipoUsu
-    })
+     })
+     return True
+    except Exception as e :
+       print(str(e))
+       return False
+    

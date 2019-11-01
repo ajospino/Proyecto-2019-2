@@ -30,7 +30,7 @@ class UI_Usuario(QMainWindow):
         self.botonVentasAceptarA.clicked.connect(self.aggUsuario)
     #-----------------gets-----------------
     def getCBusuarios(self):
-        self.comboBoxUsuarios.currentText()
+        return self.comboBoxUsuarios.currentText()
     def getLEusuario(self):
         return self.lineEditUsuario.text()
     def getLEcontrasena(self):
@@ -58,8 +58,8 @@ class UI_Usuario(QMainWindow):
         return QMessageBox.question(self, 'Eliminar', "¿Esta seguro que desea eliminar este usuario?",
                                            QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
     def throwMsgCompletado(self):
-        QMessageBox.Information(self, 'Eliminar', "Proceso completado con exito", QMessageBox.Ok)
+        return QMessageBox.question(self, 'Agregar', "Proceso completado con exito", QMessageBox.Ok)
     def throwMsgErrorEliminar(self):
-        QMessageBox.question(self, 'Eliminar', "No fue posible eliminar esta cuenta", QMessageBox.Ok)
+        return QMessageBox.question(self, 'Eliminar', "No fue posible eliminar esta cuenta", QMessageBox.Ok)
     def throwMsgErrorCreacion(self):
-        QMessageBox.question(self, 'Agregar', "No fue posible crear esta cuenta", QMessageBox.Ok)
+        return QMessageBox.question(self, 'Agregar', "No fue posible crear esta cuenta", QMessageBox.Ok)

@@ -29,7 +29,7 @@ class Usuario():
         try:
             agregarUs(usu, con, tipo)
             self.UIu.throwMsgCompletado()
-        except:
+        except Exception as e :
             self.UIu.throwMsgErrorCreacion()
         
     
