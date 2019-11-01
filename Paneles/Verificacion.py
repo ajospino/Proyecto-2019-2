@@ -36,6 +36,9 @@ class Verificacion():
     def show(self):
         self.UIv.show()
         
+    def notificarVenta(self):
+        enviarCorreo("NOTIF_VENTA", CORREO, None)
+        
     def finalizarVenta(self):
         try:
             self.UIv.enableBTfinalizar(False)
@@ -45,10 +48,10 @@ class Verificacion():
             self.UIv.enableBTfacturaCorreo(True)
             self.UIv.enableBTcorreo(True)
             setVenta(self.informacionCliente, self.informacionVenta)
-            #enviarCorreo('NOTIF_VENTA', CORREO, None)
+            self.notificarVenta()
             self.UIv.throwMsgTerminado()
             
-        except:
+        except Exception as e:
             self.UIv.enableBTfinalizar(True)
             self.UIv.enableBTregresarVentas(True)
             self.UIv.enableBTregresar(False)
@@ -56,7 +59,7 @@ class Verificacion():
             self.UIv.enableBTfacturaCorreo(False)
             self.UIv.enableBTcorreo(False)
             self.UIv.throwMsgErrorProceso()
-
+            print(e)
     def hacerFactura(self):
         pathNombre = self.informacionCliente[3]
         buttonReply = self.UIv.getRDialog()
