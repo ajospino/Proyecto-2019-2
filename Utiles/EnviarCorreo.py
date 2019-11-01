@@ -9,6 +9,7 @@ from email.mime.base import MIMEBase
 from email.encoders import encode_base64
 from Utiles.htmltemplate import prepararCorreo
 from Utiles.Factura import fecha
+from Constantes import EMAIL,CONTRASEÑA,ASUNTO 
 
 def enviarCorreo(tipo,correo, pathArchivo):
     if(tipo == "FACTURA" or tipo =="NOTIF"):
@@ -36,7 +37,7 @@ def enviarCorreo(tipo,correo, pathArchivo):
         file_name = f.name
 
     msg.add_attachment(file_data, maintype = 'aplication', subtype ='octect-stream' , filename = file_name)
-
+    print('Alfredo x Burra FOREVER')
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
         smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
         smtp.send_message(msg)
