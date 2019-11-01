@@ -42,7 +42,7 @@
 color: rgb(238, 238, 238);</string>
     </property>
     <property name="text">
-     <string>Moneda fiduciaria*</string>
+     <string>Moneda fiduciaria</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditCodigos">
@@ -429,10 +429,10 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>740</x>
+      <x>730</x>
       <y>0</y>
       <width>611</width>
-      <height>691</height>
+      <height>821</height>
      </rect>
     </property>
     <property name="font">
@@ -521,7 +521,7 @@ color: rgb(238, 238, 238);</string>
 color: rgb(238, 238, 238);</string>
     </property>
     <property name="text">
-     <string>Tasa del día*</string>
+     <string>Tasa del día</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditTasa">
@@ -640,9 +640,83 @@ color: rgb(238, 238, 238);</string>
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>330</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(34, 40, 49);
+color: rgb(230, 132, 0);</string>
+    </property>
+    <property name="text">
+     <string>(*)Campos de caracter obligatorio</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>190</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(34, 40, 49);
+color: rgb(255, 102, 0);</string>
+    </property>
+    <property name="text">
+     <string>*</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>240</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(34, 40, 49);
+color: rgb(255, 102, 0);</string>
+    </property>
+    <property name="text">
+     <string>*</string>
+    </property>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
-   <zorder>label_8</zorder>
    <zorder>lineEditCodigos</zorder>
    <zorder>botonEditar</zorder>
    <zorder>label_7</zorder>
@@ -658,7 +732,6 @@ color: rgb(238, 238, 238);</string>
    <zorder>botonEliminar</zorder>
    <zorder>botonVentas</zorder>
    <zorder>botonCompras</zorder>
-   <zorder>lineEditMoneda</zorder>
    <zorder>label_6</zorder>
    <zorder>botonIngresar</zorder>
    <zorder>label_9</zorder>
@@ -666,6 +739,11 @@ color: rgb(238, 238, 238);</string>
    <zorder>botonInventario</zorder>
    <zorder>label_5</zorder>
    <zorder>lineEditFecha</zorder>
+   <zorder>label_24</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_22</zorder>
+   <zorder>lineEditMoneda</zorder>
+   <zorder>label_23</zorder>
   </widget>
  </widget>
  <resources/>

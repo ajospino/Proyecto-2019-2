@@ -2,6 +2,7 @@ import locale, ast, re, os
 from Utiles.Conexion import setVenta, getCodigosParaVender
 from Utiles.Factura import generarFactura, hacerCodigos
 from Utiles.EnviarCorreo import enviarCorreo
+from Constantes import CORREO
 from UI.UI_verificacion import *
 
 #Varios

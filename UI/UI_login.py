@@ -18,13 +18,8 @@ class UI_login(QMainWindow):
         self.setWindowIcon(QIcon(ICONO))
         self.setContentsMargins(0, 0, 0, 0)
         self.ImagenLabel.setPixmap(QtGui.QPixmap(IMAGEN_RANDOM))
-        self.label_3.setAttribute(Qt.WA_TranslucentBackground, True)
         self.label.setAttribute(Qt.WA_TranslucentBackground, True)
         self.label_2.setAttribute(Qt.WA_TranslucentBackground, True)
-       
-        # -----------------COMBOBOX-----------------
-        self.comboboxTipoCuenta.addItems(TIPO_CUENTA)
-
         # -----------------Trigger-----------------
         self.botonIngresar.clicked.connect(self.validar)
     
@@ -37,8 +32,6 @@ class UI_login(QMainWindow):
         return self.lineEditUsuario.text()
     def getContrasena(self):
         return self.lineEditContrasena.text()
-    def getTipoCuenta(self):
-        return self.comboboxTipoCuenta.currentText()
     # -----------------throwMsg-----------------
     def throwMsgErrorProceso(self):
-        QMessageBox.information(self, "Mensaje", "Contraseña incorrecta", QMessageBox.Ok)
+        QMessageBox.information(self, "Mensaje", "Ingreso invalido", QMessageBox.Ok)

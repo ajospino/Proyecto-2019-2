@@ -14,10 +14,8 @@ class Login():
     def validar(self):
         self.usuario = self.UIl.getUsuario()
         self.contrasena = self.UIl.getContrasena()
-        self.tipoCuenta = self.UIl.getTipoCuenta()
-        
-        Tipo_cuenta = True if (self.tipoCuenta == ADMINISTRADOR) else False
-        if verificar(self.usuario, self.contrasena, Tipo_cuenta):
+        entrar, Tipo_cuenta = verificar(self.usuario, self.contrasena)
+        if(entrar):
             self.UIl.abrirInventario(Tipo_cuenta)
         else:
             self.UIl.throwMsgErrorProceso()
