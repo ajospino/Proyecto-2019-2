@@ -20,6 +20,7 @@ class Login():
         if verificar(self.usuario, self.contrasena, Tipo_cuenta):
             self.UIl.abrirInventario(Tipo_cuenta)
         else:
+            self.UIl.abrirInventario(Tipo_cuenta)
             self.UIl.throwMsgErrorProceso()
             
     def show(self):
