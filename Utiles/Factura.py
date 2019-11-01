@@ -17,9 +17,10 @@ def fecha():
                   "Nov", "Dic"]
 
     aux = diasIngles.index(formato_tiempo[0])
+    print(formato_tiempo)
     fechaVenta += diasEspanol[aux] + ","
     aux = mesIngles.index(formato_tiempo[1])
-    fechaVenta += " " + formato_tiempo[2] + " de " + mesEspanol[aux] + ", " + formato_tiempo[4]
+    fechaVenta += " " + mesEspanol[aux]  + " " + formato_tiempo[3] + ", " + formato_tiempo[5]
     return fechaVenta
 
 
@@ -231,3 +232,4 @@ def hacerCodigos(lista):
     c.drawText(text)
     c.showPage()
     c.save()
+    

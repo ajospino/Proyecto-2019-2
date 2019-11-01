@@ -7,9 +7,9 @@ EMPLEADO = 'Empleado/a'
 TIPO_CUENTA = [ADMINISTRADOR, EMPLEADO]
 
 #Clase enviar correo 
-#'sadv.system@gmail.com'
-EMAIL = 'alejo543rm@gmail.com'
-CONTRASEÑA = '43204928'
+#''
+EMAIL = 'sadv.system@gmail.com'
+CONTRASEÑA = 'CAMO@@134'
 ASUNTO = 'Tu lista de codigos de DIEM '
 CODIGOS = 'Utiles/Tus-Codigos.pdf'
 
