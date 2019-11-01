@@ -1,18 +1,21 @@
 import os
 import smtplib
 import imghdr
-from Constantes import *
 from email.message import EmailMessage
 import smtplib, getpass, os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email.encoders import encode_base64
+from Utiles.htmltemplate import prepararCorreo
+from Utiles.Factura import fecha
 
 def enviarCorreo(tipo,correo, pathArchivo):
     if(tipo == "FACTURA" or tipo =="NOTIF"):
+        html = prepararCorreo("Se ha realizado una venta",fecha())
         path = pathArchivo
     elif(tipo == "CODIGO"):
+        html = prepararCorreo("Tus codigos son:",fecha())
         path = "Codigos/TusCodigos.pdf"
     else:
         return
@@ -23,6 +26,7 @@ def enviarCorreo(tipo,correo, pathArchivo):
     msg['Subject'] = ASUNTO
     msg['From'] = EMAIL_ADDRESS
     msg['To'] = correo
+
 
     msg.add_alternative(html, subtype = 'html')
     
