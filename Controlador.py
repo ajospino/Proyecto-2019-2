@@ -22,8 +22,8 @@ class Controlador:
         self.login.UIl.switch_Inventario.connect(self.show_Inventario)
         self.login.show()
 
-    def show_Inventario(self):
-        self.inventario = Inventario()
+    def show_Inventario(self,tmp = True):
+        self.inventario = Inventario(tmp)
         self.inventario.UIi.switch_Compra.connect(self.show_Compra)
         self.inventario.UIi.switch_Venta.connect(self.show_Venta)
         self.inventario.UIi.switch_Usuario.connect(self.show_Usuario)

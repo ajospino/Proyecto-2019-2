@@ -56,3 +56,12 @@ class UI_Inventario(QMainWindow):
     def abrirLogin(self):
         self.switch_Login.emit()
         self.close()
+    # -----------------Enables----------------- 
+    def enableBTinventario(self,tmp):
+        self.botonInventario.setEnabled(tmp)
+    def enableBTcompra(self,tmp):
+        self.botonCompras.setEnabled(tmp)
+    def enableBTventa(self,tmp):
+        self.botonVentas.setEnabled(tmp)
+    def enableBTusuario(self,tmp):
+        self.botonUsuarios.setEnabled(tmp)

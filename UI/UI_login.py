@@ -7,7 +7,7 @@ from Constantes import *
 
 class UI_login(QMainWindow):
     
-    switch_Inventario = QtCore.pyqtSignal()
+    switch_Inventario = QtCore.pyqtSignal(bool)
     
     sigValidar = QtCore.pyqtSignal()
     
@@ -30,8 +30,8 @@ class UI_login(QMainWindow):
     
     def validar(self):
         self.sigValidar.emit()
-    def abrirInventario(self):
-        self.switch_Inventario.emit()
+    def abrirInventario(self,tmp):
+        self.switch_Inventario.emit(tmp)
     # -----------------gets-----------------
     def getUsuario(self):
         return self.lineEditUsuario.text()

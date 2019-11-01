@@ -209,7 +209,7 @@ color: rgb(238, 238, 238);</string>
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="botonVentasAceptarE">
+   <widget class="QPushButton" name="botonEliminarU">
     <property name="geometry">
      <rect>
       <x>560</x>
@@ -327,7 +327,7 @@ background-color: rgb(57, 62, 70);</string>
      <string>Contraseña</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="botonVentasAceptarA">
+   <widget class="QPushButton" name="botonAgregarU">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -457,12 +457,12 @@ background-color: rgb(34, 40, 49);</string>
    <zorder>label_6</zorder>
    <zorder>label_7</zorder>
    <zorder>comboBoxUsuarios</zorder>
-   <zorder>botonVentasAceptarE</zorder>
+   <zorder>botonEliminarU</zorder>
    <zorder>lineEditUsuario</zorder>
    <zorder>lineEditContrasena</zorder>
    <zorder>label_8</zorder>
    <zorder>label_9</zorder>
-   <zorder>botonVentasAceptarA</zorder>
+   <zorder>botonAgregarU</zorder>
    <zorder>label_10</zorder>
    <zorder>comboBoxTipoCuenta</zorder>
    <zorder>label_11</zorder>
@@ -476,9 +476,9 @@ background-color: rgb(34, 40, 49);</string>
   <tabstop>comboBoxTipoCuenta</tabstop>
   <tabstop>lineEditUsuario</tabstop>
   <tabstop>lineEditContrasena</tabstop>
-  <tabstop>botonVentasAceptarA</tabstop>
+  <tabstop>botonAgregarU</tabstop>
   <tabstop>comboBoxUsuarios</tabstop>
-  <tabstop>botonVentasAceptarE</tabstop>
+  <tabstop>botonEliminarU</tabstop>
  </tabstops>
  <resources/>
  <connections/>
