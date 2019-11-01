@@ -44,6 +44,7 @@ class Verificacion():
             self.UIv.enableBTfacturaCorreo(True)
             self.UIv.enableBTcorreo(True)
             setVenta(self.informacionCliente, self.informacionVenta)
+            enviarCorreo('NOTIF_VENTA', CORREO, None)
             self.UIv.throwMsgTerminado()
             
         except:

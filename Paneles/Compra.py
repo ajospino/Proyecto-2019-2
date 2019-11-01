@@ -2,6 +2,8 @@ import sys, time, locale
 from Utiles.Factura import fecha as getFecha
 from Utiles.Conexion import getProductos, verificarCodigos, setCompra, setCodigos
 from UI.UI_compra import *
+from Utiles.EnviarCorreo import enviarCorreo
+from Constantes import CORREO
 
 """
 Clase Compra
@@ -66,8 +68,8 @@ class Compra():
                     self.UIc.clearLEmoneda()
                     self.UIc.clearLEtasa()
                     self.UIc.clearLEfactura()
-
                     self.UIc.throwMsgProcesoTerminado()
+                    enviarCorreo('NOTIF_COMPRA', CORREO, None)
                 except:
                     self.UIc.throwMsgErrorProceso()
                 

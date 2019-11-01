@@ -22,8 +22,8 @@ def prepararCorreo(v1,v2):
                 </div>
 
             <tr>
-                <td style="background-color: #222831">
-                    <div style="color: #222831; margin: %s %s %s; text-align: justify;font-family: sans-serif">
+                <td style="background-color: #white">
+                    <div style="color: #white; margin: %s %s %s; text-align: justify;font-family: sans-serif">
                         <h1 align="center" style="color: #7c0a02; margin: 0 0 7px">%s</h1>
                         <p align="center" style="color: #3c4245; margin: 2px; font-size: 15px">
                             FECHA %s</p>
@@ -35,7 +35,7 @@ def prepararCorreo(v1,v2):
                         <div style="width: %s; text-align: center">
                             <a style="text-decoration: none; margin: 10px; border-radius: 5px; padding: 11px 23px; color: white; background-color: #7c0a02" href="http://google.com/">Ir a la página</a>	
                         </div>
-                        <p style="color: #b3b3b3; font-size: 12px; text-align: center;margin: 30px 0 0">SADV.COM.CO</p>
+                        <p style="color: #3c4245; font-size: 12px; text-align: center;margin: 30px 0 0">SADV.COM.CO</p>
                     </div>
                 </td>
             </tr>

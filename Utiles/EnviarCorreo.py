@@ -12,12 +12,18 @@ from Utiles.Factura import fecha
 from Constantes import EMAIL,CONTRASEÑA,ASUNTO 
 
 def enviarCorreo(tipo,correo, pathArchivo):
-    if(tipo == "FACTURA" or tipo =="NOTIF"):
-        html = prepararCorreo("Se ha realizado una venta",fecha())
+    if(tipo == "FACTURA" ):
+        html = prepararCorreo("Tu factura es",fecha())
         path = pathArchivo
     elif(tipo == "CODIGO"):
         html = prepararCorreo("Tus codigos son:",fecha())
         path = "Codigos/TusCodigos.pdf"
+    elif( tipo =="NOTIF_VENTA"):
+        html = prepararCorreo("SE HA REALIZADO UNA VENTA:",fecha())
+        path = None
+    elif( tipo =="NOTIF_COMPRA"):
+        html = prepararCorreo("SE HA REALIZADO UNA COMPRA:",fecha())
+        path = None
     else:
         return
     
