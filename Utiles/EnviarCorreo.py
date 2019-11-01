@@ -21,7 +21,7 @@ def mandarCorreoHtml(correo):
 
     msg.add_alternative(html, subtype = 'html')
 
-    archivos = [CODIGOS]
+    archivos = ['Codigos/TusCodigos.pdf']
 
     for archivo in archivos:
         with open(archivo, 'rb') as f:
