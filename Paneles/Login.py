@@ -17,7 +17,7 @@ class Login():
         self.contrasena = self.UIl.getContrasena()
         entrar, Tipo_cuenta = verificar(self.usuario, self.contrasena)
         if(entrar):
-            self.notificarIngreso
+            self.notificarIngreso()
             self.UIl.abrirInventario(Tipo_cuenta)
         else:
             self.UIl.throwMsgErrorProceso()

@@ -26,7 +26,7 @@ class Compra():
         self.UIc.show()
         
     def notificarCompra(self):
-        enviarCorreo('NOTIF_COMPRA', CORREO, None)
+        enviarCorreo('NOTIF_COMPRA', CORREO, None, None)
         
     def ingresarCodigos(self):
         codigos = self.UIc.getLECodigos()

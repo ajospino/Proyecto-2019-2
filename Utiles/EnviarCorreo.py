@@ -25,7 +25,7 @@ def enviarCorreo(tipo,correo, pathArchivo, usuario):
         html = prepararCorreo("Se ha realizado una compra:",fecha())
         path = None
     elif( tipo =="NOTIF_INGRESO"):
-        html = prepararCorreo("Ha ingresado: "+usuario+" al sistema",fecha())
+        html = prepararCorreo( usuario+" Ha ingresado al sistema",fecha())
         path = None
     else:
         return

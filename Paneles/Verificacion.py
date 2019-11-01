@@ -37,7 +37,7 @@ class Verificacion():
         self.UIv.show()
         
     def notificarVenta(self):
-        enviarCorreo("NOTIF_VENTA", CORREO, None)
+        enviarCorreo("NOTIF_VENTA", CORREO, None, None)
         
     def finalizarVenta(self):
         try:
