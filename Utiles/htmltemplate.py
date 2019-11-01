@@ -26,7 +26,7 @@ def prepararCorreo(v1,v2):
                     <div style="color: #white; margin: %s %s %s; text-align: justify;font-family: sans-serif">
                         <h1 align="center" style="color: #7c0a02; margin: 0 0 7px">%s</h1>
                         <p align="center" style="color: #3c4245; margin: 2px; font-size: 15px">
-                            FECHA %s</p>
+                            Fecha: %s</p>
                             <p align="center" style="color: #ecf0f1; margin: 5px; font-size: px">
                         </ul>
                         <div style="width: %s;margin:10px 0; display: inline-block;text-align: center">
