@@ -26,7 +26,8 @@ class Usuario():
         usu = self.UIu.getLEusuario()
         con = self.UIu.getLEcontrasena()
         tipo = True if (self.UIu.getCBtipoCuenta() == "Administrador/a") else False
-        if(agregarUs(usu, con, tipo)):
+        try:
+            agregarUs(usu, con, tipo)
             self.UIu.throwMsgCompletado()
         except Exception as e :
             self.UIu.throwMsgErrorCreacion()
