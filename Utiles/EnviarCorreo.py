@@ -19,7 +19,7 @@ def mandarCorreoHtml(correo):
     msg['To'] = correo
     msg.set_content(ASUNTO)
 
-    msg.add_alternative(html)
+    msg.add_alternative(html, subtype = 'html')
 
     archivos = [CODIGOS]
 
@@ -43,7 +43,7 @@ def mandarCorreoFactura(correo, pathArchivo):
     msg['From'] = EMAIL_ADDRESS
     msg['To'] = correo
 
-    msg.add_alternative(html)
+    msg.add_alternative(html, subtype = 'html')
     
     archivos = [pathArchivo]
 
