@@ -1,7 +1,7 @@
 import locale, ast, re, os
 from Utiles.Conexion import setVenta, getCodigosParaVender
 from Utiles.Factura import generarFactura, hacerCodigos
-from Utiles.EnviarCorreo import mandarCorreoFactura, mandarCorreoHtml
+from Utiles.EnviarCorreo import enviarCorreo
 from UI.UI_verificacion import *
 
 #Varios
@@ -16,8 +16,8 @@ class Verificacion():
         self.UIv = UI_verificacion(self.informacionCliente)
         self.UIv.sigFinalizarVenta.connect(self.finalizarVenta)
         self.UIv.sigHacerFactura.connect(self.hacerFactura)
-        self.UIv.sigMandarCorreo.connect(self.mandarCorreo)
-        self.UIv.sigMandarFacturaCorreo.connect(self.mandarFacturaCorreo)
+        self.UIv.sigMandarCorreo.connect(self.enviarCodigos)
+        self.UIv.sigMandarFacturaCorreo.connect(self.enviarFactura)
         
     # -----------------ListaCodigos-----------------
         # producto, cantidad, precio
@@ -67,22 +67,22 @@ class Verificacion():
         self.UIv.enableBTfactura(False)
         self.UIv.enableBTfacturaCorreo(True)
 		
-    def mandarCorreo(self):
+    def enviarCodigos(self):
         hacerCodigos(self.informacionVenta)
         try:
-            mandarCorreoHtml(self.informacionCliente[8])
+            enviarCorreo("CODIGO",self.informacionCliente[8],None)
             self.UIv.enableBTcorreo(False)
             self.UIv.throwMsgTerminado()
         except:
             self.UIv.enableBTcorreo(True)
             self.UIv.throwMsgErrorCorreo()
 
-    def mandarFacturaCorreo(self):
+    def enviarFactura(self):
         hacerCodigos(self.informacionVenta)
         pathArchivo = "Facturas/" + self.informacionCliente[3] + ".pdf"
         
         try:
-            mandarCorreoFactura(self.informacionCliente[8], pathArchivo)
+            enviarCorreo("FACTURA",self.informacionCliente[8], pathArchivo)
             self.UIv.enableBTfacturaCorreo(False)
             self.UIv.throwMsgTerminado()
         except:

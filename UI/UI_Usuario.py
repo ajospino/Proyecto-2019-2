@@ -26,8 +26,8 @@ class UI_Usuario(QMainWindow):
         self.botonInventario.clicked.connect(self.abrirInventario)
         self.botonCompras.clicked.connect(self.abrirCompras)
         self.botonVentas.clicked.connect(self.abrirVentas)
-        self.botonAgregarU.clicked.connect(self.borrarUsuario)
-        self.botonEliminarU.clicked.connect(self.aggUsuario)
+        self.botonEliminarU.clicked.connect(self.borrarUsuario)
+        self.botonAgregarU.clicked.connect(self.aggUsuario)
     #-----------------gets-----------------
     def getCBusuarios(self):
         return self.comboBoxUsuarios.currentText()
