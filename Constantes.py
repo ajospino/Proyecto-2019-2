@@ -5,7 +5,7 @@ ICONO = 'Imagenes/Logo.png'
 ADMINISTRADOR = 'Administrador/a'
 EMPLEADO = 'Empleado/a'
 TIPO_CUENTA = [ADMINISTRADOR, EMPLEADO]
-#''
+
 EMAIL = 'sadv.system@gmail.com'
 CONTRASEÑA = 'CAMO@@134'
 ASUNTO = 'Informacion SADV'
