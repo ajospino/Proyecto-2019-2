@@ -9,6 +9,7 @@ from email.mime.base import MIMEBase
 from email.encoders import encode_base64
 from Utiles.htmltemplate import prepararCorreo
 from Utiles.Factura import fecha
+from Constantes import *
 
 def enviarCorreo(tipo,correo, pathArchivo):
     if(tipo == "FACTURA" or tipo =="NOTIF"):

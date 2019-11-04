@@ -73,7 +73,8 @@ class Verificacion():
             enviarCorreo("CODIGO",self.informacionCliente[8],None)
             self.UIv.enableBTcorreo(False)
             self.UIv.throwMsgTerminado()
-        except:
+        except Exception as e:
+            print(e)
             self.UIv.enableBTcorreo(True)
             self.UIv.throwMsgErrorCorreo()
 
@@ -85,7 +86,8 @@ class Verificacion():
             enviarCorreo("FACTURA",self.informacionCliente[8], pathArchivo)
             self.UIv.enableBTfacturaCorreo(False)
             self.UIv.throwMsgTerminado()
-        except:
+        except Exception as e:
+            print(e)
             self.UIv.enableBTfacturaCorreo(True)
             self.UIv.throwMsgErrorCorreo()
     

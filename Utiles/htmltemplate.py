@@ -45,5 +45,5 @@ def prepararCorreo(v1,v2):
         </body>
         </html>
         
-    """ %(v1, v2)
+    """
     return html
