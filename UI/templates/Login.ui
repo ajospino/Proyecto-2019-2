@@ -34,7 +34,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>260</y>
+      <y>180</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -87,7 +87,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>310</y>
+      <y>250</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -107,36 +107,11 @@
      <string>Ingresar</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>70</y>
-      <width>71</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>10</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(34, 40, 49);
-color: rgb(238, 238, 238);</string>
-    </property>
-    <property name="text">
-     <string>Cuenta</string>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="lineEditUsuario">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>180</y>
+      <y>110</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -145,25 +120,6 @@ color: rgb(238, 238, 238);</string>
      <font>
       <family>Arial</family>
       <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboboxTipoCuenta">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>100</y>
-      <width>161</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>9</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -174,7 +130,7 @@ color: rgb(238, 238, 238);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>150</y>
+      <y>80</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -199,7 +155,7 @@ color: rgb(238, 238, 238);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>230</y>
+      <y>150</y>
       <width>111</width>
       <height>31</height>
      </rect>
@@ -245,8 +201,6 @@ color: rgb(238, 238, 238);</string>
    </widget>
    <zorder>labelAzul</zorder>
    <zorder>botonIngresar</zorder>
-   <zorder>label_3</zorder>
-   <zorder>comboboxTipoCuenta</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
    <zorder>lineEditUsuario</zorder>
@@ -255,7 +209,6 @@ color: rgb(238, 238, 238);</string>
   </widget>
  </widget>
  <tabstops>
-  <tabstop>comboboxTipoCuenta</tabstop>
   <tabstop>lineEditUsuario</tabstop>
   <tabstop>lineEditContrasena</tabstop>
   <tabstop>botonIngresar</tabstop>

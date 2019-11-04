@@ -14,35 +14,33 @@ def encriptar(message):
 
     return encrypted
 #------------------Desencriptar-------------------------
-def desencriptarContra(usuario,tipo):
+def desencriptarContra(usuario):
+    
+    tipoCuenta = []
     client = MongoClient()
     db = client['Diem']
     usuarios = db.Usuarios
     result = usuarios.find({
-        'Nombre del usuario': usuario,
-        'Administrador': tipo
+        'Nombre del usuario': usuario
     })
-
+      
     if not(type(result) == None):
         for i in result:
             m = i['Contraseña']
+            tipoCuenta.append(i['Administrador'])
             file = open('key.key','rb')
             key2 = file.read()
             file.close()
-
             f2 = Fernet(key2)
-            decrypted = f2.decrypt(m).decode()
-
-            return decrypted
+            decrypted = f2.decrypt(m).decode()     
+            return decrypted, bool(tipoCuenta[0])
 #------------------------Verificar---------------------------- ----
 
-def verificar(usuario,contra,tipo):
+def verificar(usuario,contra):
     entrar = False
-    res = desencriptarContra(usuario,tipo)
+    res,tipoCuenta = desencriptarContra(usuario)
     if contra == res :
         entrar = True
-        return entrar
+        return entrar, tipoCuenta
     else:
-        return entrar
-
- 
+        return entrar, tipoCuenta

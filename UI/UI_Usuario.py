@@ -63,3 +63,8 @@ class UI_Usuario(QMainWindow):
         return QMessageBox.question(self, 'Eliminar', "No fue posible eliminar esta cuenta", QMessageBox.Ok)
     def throwMsgErrorCreacion(self):
         return QMessageBox.question(self, 'Agregar', "No fue posible crear esta cuenta", QMessageBox.Ok)
+    # -----------------throwMsg-----------------
+    def clearLEusuario(self):
+        self.lineEditUsuario.clear()
+    def clearLEcontrasena(self):
+        self.lineEditContrasena.clear()

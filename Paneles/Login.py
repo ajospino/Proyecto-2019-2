@@ -1,7 +1,8 @@
 import sys
 from Utiles.Verificar import verificar
 from UI.UI_login import *
-from Constantes import ADMINISTRADOR
+from Utiles.EnviarCorreo import enviarCorreo
+from Constantes import ADMINISTRADOR, CORREO
 class Login():
     
     def __init__(self):
@@ -14,13 +15,15 @@ class Login():
     def validar(self):
         self.usuario = self.UIl.getUsuario()
         self.contrasena = self.UIl.getContrasena()
-        self.tipoCuenta = self.UIl.getTipoCuenta()
-        
-        Tipo_cuenta = True if (self.tipoCuenta == ADMINISTRADOR) else False
-        if verificar(self.usuario, self.contrasena, Tipo_cuenta):
+        entrar, Tipo_cuenta = verificar(self.usuario, self.contrasena)
+        if(entrar):
+            self.notificarIngreso()
             self.UIl.abrirInventario(Tipo_cuenta)
         else:
             self.UIl.throwMsgErrorProceso()
+    
+    def notificarIngreso(self):
+        enviarCorreo("NOTIF_INGRESO", CORREO, None, self.usuario)
             
     def show(self):
         self.UIl.show()
