@@ -1,9 +1,9 @@
-import Dependencias.pymongo
+import Dependencias.pymongo as pymongo
 from Utiles.Verificar import encriptar
-
+#"mongodb+srv://arodriguem@hotmail.com:perrahpta@diem-ckwui.mongodb.net/test?retryWrites=true&w=majority"
 def conectar():
    client = pymongo.MongoClient()
-   db = client['mongodb+srv://arodriguem@hotmail.com:CAMO@@134@diem-ckwui.mongodb.net/test?retryWrites=true&w=majority']
+   db = client['Diem']
    return db
 
 def getProductos():
