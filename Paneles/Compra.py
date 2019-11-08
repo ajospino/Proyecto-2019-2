@@ -1,4 +1,4 @@
-import sys, time, locale
+import sys, time, Dependencias.locale as locale
 from Utiles.Factura import fecha as getFecha
 from Utiles.Conexion import getProductos, verificarCodigos, setCompra, setCodigos
 from UI.UI_compra import *
@@ -107,8 +107,6 @@ class Compra():
         self.UIc.takeLW(self.row)
     def eliminarTodo(self):
         self.UIc.clearLW()
-    def show(self):
-        self.UIc.show()
     def hide(self):
         self.UIc.hie()
     

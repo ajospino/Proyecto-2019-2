@@ -1,4 +1,4 @@
-import random
+import Dependencias.random as random
 
 #Variables globales
 ICONO = 'Imagenes/Logo.png'

@@ -1,10 +1,10 @@
 import itertools
-import locale
+import Dependencias.locale as locale
 import time
 from statistics import mean
-from reportlab.lib.pagesizes import letter
-from reportlab.lib.pagesizes import A4
-from reportlab.pdfgen import canvas
+from Dependencias.reportlab.lib.pagesizes import letter
+from Dependencias.reportlab.lib.pagesizes import A4
+from Dependencias.reportlab.pdfgen import canvas
 
 def fecha():
     fechaVenta = ''

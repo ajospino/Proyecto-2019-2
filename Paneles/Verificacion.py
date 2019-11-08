@@ -1,4 +1,4 @@
-import locale, ast, re, os
+import Dependencias.locale as locale, ast, re, Dependencias.os as os
 from Utiles.Conexion import setVenta, getCodigosParaVender
 from Utiles.Factura import generarFactura, hacerCodigos
 from Utiles.EnviarCorreo import enviarCorreo

@@ -1,4 +1,4 @@
-import  locale, ast, re, os
+import  Dependencias.locale as locale, ast, re, Dependencias.os as os
 from Utiles.Factura import fecha as getFecha
 from Utiles.Conexion import verificarCodigos, getProductos
 from PyQt5 import QtCore

@@ -1,4 +1,4 @@
-import sys,time, locale, ast, re, os
+import sys, time, Dependencias.locale as locale, ast, re, Dependencias.os as os
 from Utiles.Conexion import borrarUs, agregarUs, getUsuarios
 from UI.UI_Usuario import *
 

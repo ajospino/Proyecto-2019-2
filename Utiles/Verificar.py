@@ -1,5 +1,5 @@
-from cryptography.fernet import Fernet
-from pymongo import MongoClient
+from Dependencias.cryptography.fernet import Fernet
+from Dependencias.pymongo import MongoClient
 
 #---------------------------Encriptar-----------------------------------
 def encriptar(message):

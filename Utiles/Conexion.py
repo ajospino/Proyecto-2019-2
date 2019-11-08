@@ -1,4 +1,4 @@
-import pymongo
+import Dependencias.pymongo
 from Utiles.Verificar import encriptar
 
 def conectar():
