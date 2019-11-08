@@ -3,7 +3,7 @@ from Utiles.Verificar import encriptar
 
 def conectar():
    client = pymongo.MongoClient()
-   db = client['Diem']
+   db = client['mongodb+srv://arodriguem@hotmail.com:CAMO@@134@diem-ckwui.mongodb.net/test?retryWrites=true&w=majority']
    return db
 
 def getProductos():
