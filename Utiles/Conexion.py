@@ -158,3 +158,4 @@ def agregarUs(usuario,contraseña, tipoUsu) :
        print(str(e))
        return False
     
+    #jhonmarioclinicadelplay

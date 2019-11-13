@@ -6,8 +6,8 @@ ADMINISTRADOR = 'Administrador/a'
 EMPLEADO = 'Empleado/a'
 TIPO_CUENTA = [ADMINISTRADOR, EMPLEADO]
 
-EMAIL = 'sadv.system@gmail.com'
-CONTRASEÑA = 'CAMO@@134'
+EMAIL = 'alejo543rm@gmail.com'
+CONTRASEÑA = '43204928'
 ASUNTO = 'Informacion SADV'
 CODIGOS = 'Utiles/Tus-Codigos.pdf'
 
