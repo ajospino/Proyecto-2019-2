@@ -14,6 +14,7 @@ def getProductos():
       productos.append(i['Descripcion'])
    return productos
 
+
 def setCompra(factura, descripcion, socio, moneda, tasa, fecha, valorLote, codigos):
    db = conectar()
    db.Compras.insert({
