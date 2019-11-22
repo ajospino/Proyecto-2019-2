@@ -1,1 +1,0 @@
-CreateObject("Wscript.Shell").Run "py ./Controlador.py",0,True
